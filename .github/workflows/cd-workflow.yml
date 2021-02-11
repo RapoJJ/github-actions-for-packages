@@ -60,7 +60,7 @@ jobs:
       - name: Build container image in heroku
         uses: akhileshns/heroku-deploy@v3.10.9
         with:
-          heroku_api_key: ${{HEROKU_API_KEY}}
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "tic-tac-toe-testi"
           heroku_email: "joonas.rapo@gmail.com"
           remote_branch: master
